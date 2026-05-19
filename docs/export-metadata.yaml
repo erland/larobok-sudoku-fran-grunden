@@ -1,0 +1,52 @@
+title: Sudoku från grunden
+subtitle: Steg för steg från första rutan till avancerade strategier
+author: Erland Lindmark
+language: sv
+difficulty: beginner-to-basic
+audience: Vuxna nybörjare
+book_type: praktisk lärobok
+edition: '1'
+version: '0.13'
+date: '2026-05-17'
+rights: All rights reserved
+publisher: ''
+cover_image: "assets/cover/cover.png"
+identifier: urn:uuid:d1ccb25d-bcdc-4a0d-88c8-dcbf00d676ef
+creator_role: aut
+subject: Sudoku, problemlösning, logiskt tänkande
+description: En praktisk och pedagogisk lärobok för vuxna nybörjare som vill lära
+  sig lösa sudoku steg för steg och få en introduktion till mer avancerade strategier.
+project_slug: sudoku-fran-grunden
+zip_naming:
+  initial: sudoku-fran-grunden-projekt.zip
+  chapter_update: sudoku-fran-grunden-projekt-kapitel-NN.zip
+chapters:
+- chapters/00-inledning.md
+- chapters/01-sudokuns-regler-och-uppbyggnad.md
+- chapters/02-borja-med-enkla-siffror.md
+- chapters/03-anteckningar-och-kandidater.md
+- chapters/04-vanliga-nyborjarstrategier.md
+- chapters/05-arbeta-systematiskt.md
+- chapters/06-par-och-lasta-mojligheter.md
+- chapters/07-monster-i-rader-och-kolumner.md
+- chapters/08-nar-man-kor-fast.md
+- chapters/09-vanliga-misstag.md
+- chapters/10-avancerade-strategier-pa-ett-lugnt-satt.md
+- chapters/11-fullstandiga-losningar-steg-for-steg.md
+- chapters/12-traningskapitel.md
+- chapters/13-nasta-steg.md
+exports:
+  epub:
+    enabled: true
+    include_text_toc: false
+    airy_layout: true
+    render_markdown_styles: true
+  pdf:
+    enabled: true
+    include_toc_before_introduction: true
+    render_markdown_styles: true
+  docx:
+    enabled: true
+    render_markdown_styles: true
+  markdown:
+    enabled: true

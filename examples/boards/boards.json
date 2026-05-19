@@ -1,0 +1,1702 @@
+[
+  {
+    "id": "BOARD-01-01",
+    "title": "Tomt 9×9-rutnät",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [],
+    "caption": "Ett tomt sudoku-rutnät med nio rader, nio kolumner och nio 3×3-boxar."
+  },
+  {
+    "id": "BOARD-01-02",
+    "title": "Rad 4",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "row",
+        "index": 4,
+        "color": "blue"
+      }
+    ],
+    "caption": "Rad 4 markerad i ett 9×9-rutnät."
+  },
+  {
+    "id": "BOARD-01-03",
+    "title": "Kolumn 5",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "col",
+        "index": 5,
+        "color": "blue"
+      }
+    ],
+    "caption": "Kolumn 5 markerad i ett 9×9-rutnät."
+  },
+  {
+    "id": "BOARD-01-04",
+    "title": "Övre vänstra boxen",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "box",
+        "index": 1,
+        "color": "blue"
+      }
+    ],
+    "caption": "Den övre vänstra 3×3-boxen markerad."
+  },
+  {
+    "id": "BOARD-02-01",
+    "title": "Fokus på siffran 5",
+    "grid": [
+      "500010000",
+      "000000000",
+      "000005000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "box",
+        "index": 1,
+        "color": "gold"
+      },
+      {
+        "type": "row",
+        "index": 1,
+        "color": "red"
+      },
+      {
+        "type": "row",
+        "index": 3,
+        "color": "red"
+      },
+      {
+        "type": "col",
+        "index": 6,
+        "color": "red"
+      }
+    ],
+    "caption": "Ett exempel där befintliga femmor hjälper dig utesluta rutor."
+  },
+  {
+    "id": "BOARD-11-01",
+    "title": "Klassiskt exempelrutnät",
+    "grid": [
+      "530070000",
+      "600195000",
+      "098000060",
+      "800060003",
+      "400803001",
+      "700020006",
+      "060000280",
+      "000419005",
+      "000080079"
+    ],
+    "highlights": [],
+    "caption": "Ett klassiskt nybörjarvänligt sudoku som används för en fullständig lösningsrytm."
+  },
+  {
+    "id": "BOARD-06-01",
+    "title": "Naket par före rensning",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "row",
+        "index": 1,
+        "color": "grey"
+      },
+      {
+        "type": "cell",
+        "row": 1,
+        "col": 1,
+        "color": "gold"
+      },
+      {
+        "type": "cell",
+        "row": 1,
+        "col": 3,
+        "color": "gold"
+      }
+    ],
+    "notes": {
+      "r1c1": "2,7",
+      "r1c2": "1,4",
+      "r1c3": "2,7",
+      "r1c4": "2,5,7",
+      "r1c5": "3,5"
+    },
+    "caption": "R1C1 och R1C3 har samma två kandidater: 2 och 7."
+  },
+  {
+    "id": "BOARD-06-02",
+    "title": "Naket par efter rensning",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "row",
+        "index": 1,
+        "color": "grey"
+      },
+      {
+        "type": "cell",
+        "row": 1,
+        "col": 1,
+        "color": "gold"
+      },
+      {
+        "type": "cell",
+        "row": 1,
+        "col": 3,
+        "color": "gold"
+      },
+      {
+        "type": "cell",
+        "row": 1,
+        "col": 4,
+        "color": "green"
+      }
+    ],
+    "notes": {
+      "r1c1": "2,7",
+      "r1c2": "1,4",
+      "r1c3": "2,7",
+      "r1c4": "5",
+      "r1c5": "3,5"
+    },
+    "caption": "Efter rensning blir R1C4 en enkel singel."
+  },
+  {
+    "id": "BOARD-06-03",
+    "title": "Dolt par i en box",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "box",
+        "index": 1,
+        "color": "grey"
+      },
+      {
+        "type": "cell",
+        "row": 1,
+        "col": 1,
+        "color": "gold"
+      },
+      {
+        "type": "cell",
+        "row": 1,
+        "col": 2,
+        "color": "gold"
+      }
+    ],
+    "notes": {
+      "r1c1": "1,4,8",
+      "r1c2": "2,4,8",
+      "r1c3": "1,3,5",
+      "r2c1": "2,6",
+      "r2c2": "3,6",
+      "r2c3": "5,7"
+    },
+    "caption": "Kandidaterna 4 och 8 finns bara i två rutor i boxen."
+  },
+  {
+    "id": "BOARD-06-04",
+    "title": "Dolt par efter rensning",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "box",
+        "index": 1,
+        "color": "grey"
+      },
+      {
+        "type": "cell",
+        "row": 1,
+        "col": 1,
+        "color": "green"
+      },
+      {
+        "type": "cell",
+        "row": 1,
+        "col": 2,
+        "color": "green"
+      }
+    ],
+    "notes": {
+      "r1c1": "4,8",
+      "r1c2": "4,8",
+      "r1c3": "1,3,5",
+      "r2c1": "2,6",
+      "r2c2": "3,6",
+      "r2c3": "5,7"
+    },
+    "caption": "Andra kandidater tas bort från parets två rutor."
+  },
+  {
+    "id": "BOARD-06-05",
+    "title": "Låst kandidat före rensning",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "box",
+        "index": 1,
+        "color": "gold"
+      },
+      {
+        "type": "row",
+        "index": 2,
+        "color": "blue"
+      }
+    ],
+    "notes": {
+      "r2c1": "5?",
+      "r2c3": "5?",
+      "r2c4": "5?",
+      "r2c6": "5?"
+    },
+    "caption": "Kandidat 5 är låst till rad 2 inne i den vänstra boxen."
+  },
+  {
+    "id": "BOARD-06-06",
+    "title": "Låst kandidat efter rensning",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "box",
+        "index": 1,
+        "color": "gold"
+      },
+      {
+        "type": "row",
+        "index": 2,
+        "color": "blue"
+      },
+      {
+        "type": "cell",
+        "row": 2,
+        "col": 4,
+        "color": "red"
+      },
+      {
+        "type": "cell",
+        "row": 2,
+        "col": 6,
+        "color": "red"
+      }
+    ],
+    "notes": {
+      "r2c1": "5?",
+      "r2c3": "5?",
+      "r2c4": "x",
+      "r2c6": "x"
+    },
+    "caption": "Därför kan kandidat 5 tas bort från rad 2 utanför boxen."
+  },
+  {
+    "id": "BOARD-07-01",
+    "title": "Rad-box-interaktion före rensning",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "box",
+        "index": 1,
+        "color": "gold"
+      },
+      {
+        "type": "row",
+        "index": 2,
+        "color": "blue"
+      }
+    ],
+    "notes": {
+      "r1c1": "x",
+      "r1c2": "x",
+      "r1c3": "x",
+      "r2c1": "6",
+      "r2c3": "6",
+      "r3c1": "x",
+      "r3c2": "x",
+      "r3c3": "x",
+      "r2c4": "6",
+      "r2c6": "6",
+      "r2c8": "6"
+    },
+    "caption": "I boxen kan 6 bara ligga på rad 2."
+  },
+  {
+    "id": "BOARD-07-02",
+    "title": "Rad-box-interaktion efter rensning",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "box",
+        "index": 1,
+        "color": "gold"
+      },
+      {
+        "type": "row",
+        "index": 2,
+        "color": "blue"
+      },
+      {
+        "type": "cell",
+        "row": 2,
+        "col": 4,
+        "color": "red"
+      },
+      {
+        "type": "cell",
+        "row": 2,
+        "col": 6,
+        "color": "red"
+      },
+      {
+        "type": "cell",
+        "row": 2,
+        "col": 8,
+        "color": "red"
+      }
+    ],
+    "notes": {
+      "r2c1": "6",
+      "r2c3": "6",
+      "r2c4": "x",
+      "r2c6": "x",
+      "r2c8": "x"
+    },
+    "caption": "Kandidat 6 rensas från övriga relevanta rutor på raden."
+  },
+  {
+    "id": "BOARD-07-03",
+    "title": "Kolumn-box-interaktion före rensning",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "box",
+        "index": 5,
+        "color": "gold"
+      },
+      {
+        "type": "col",
+        "index": 5,
+        "color": "blue"
+      }
+    ],
+    "notes": {
+      "r4c4": "x",
+      "r4c5": "4",
+      "r4c6": "x",
+      "r5c4": "x",
+      "r5c5": "4",
+      "r5c6": "x",
+      "r6c4": "x",
+      "r6c6": "x",
+      "r1c5": "4",
+      "r3c5": "4",
+      "r7c5": "4",
+      "r9c5": "4"
+    },
+    "caption": "I mittenboxen kan 4 bara ligga i kolumn 5."
+  },
+  {
+    "id": "BOARD-07-04",
+    "title": "Kolumn-box-interaktion efter rensning",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "box",
+        "index": 5,
+        "color": "gold"
+      },
+      {
+        "type": "col",
+        "index": 5,
+        "color": "blue"
+      },
+      {
+        "type": "cell",
+        "row": 1,
+        "col": 5,
+        "color": "red"
+      },
+      {
+        "type": "cell",
+        "row": 3,
+        "col": 5,
+        "color": "red"
+      },
+      {
+        "type": "cell",
+        "row": 7,
+        "col": 5,
+        "color": "red"
+      },
+      {
+        "type": "cell",
+        "row": 9,
+        "col": 5,
+        "color": "red"
+      }
+    ],
+    "notes": {
+      "r4c5": "4",
+      "r5c5": "4",
+      "r1c5": "x",
+      "r3c5": "x",
+      "r7c5": "x",
+      "r9c5": "x"
+    },
+    "caption": "Kandidat 4 rensas från kolumn 5 utanför boxen."
+  },
+  {
+    "id": "BOARD-10-01",
+    "title": "X-Wing med kandidat 7",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "row",
+        "index": 3,
+        "color": "blue"
+      },
+      {
+        "type": "row",
+        "index": 7,
+        "color": "blue"
+      },
+      {
+        "type": "col",
+        "index": 2,
+        "color": "gold"
+      },
+      {
+        "type": "col",
+        "index": 5,
+        "color": "gold"
+      }
+    ],
+    "notes": {
+      "r3c2": "7",
+      "r3c5": "7",
+      "r7c2": "7",
+      "r7c5": "7",
+      "r1c2": "x",
+      "r5c2": "x",
+      "r9c5": "x"
+    },
+    "caption": "Två rader låser kandidat 7 till samma två kolumner."
+  },
+  {
+    "id": "BOARD-10-02",
+    "title": "Swordfish med kandidat 4",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "row",
+        "index": 1,
+        "color": "blue"
+      },
+      {
+        "type": "row",
+        "index": 4,
+        "color": "blue"
+      },
+      {
+        "type": "row",
+        "index": 8,
+        "color": "blue"
+      },
+      {
+        "type": "col",
+        "index": 2,
+        "color": "gold"
+      },
+      {
+        "type": "col",
+        "index": 5,
+        "color": "gold"
+      },
+      {
+        "type": "col",
+        "index": 8,
+        "color": "gold"
+      }
+    ],
+    "notes": {
+      "r1c2": "4",
+      "r1c5": "4",
+      "r4c5": "4",
+      "r4c8": "4",
+      "r8c2": "4",
+      "r8c8": "4",
+      "r2c2": "x",
+      "r6c5": "x",
+      "r9c8": "x"
+    },
+    "caption": "Tre rader låser kandidat 4 till tre kolumner."
+  },
+  {
+    "id": "BOARD-11-02",
+    "title": "Mittenboxen i lösningsexemplet",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "000060000",
+      "000805000",
+      "000020000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "box",
+        "index": 5,
+        "color": "gold"
+      },
+      {
+        "type": "cell",
+        "row": 5,
+        "col": 5,
+        "color": "green"
+      }
+    ],
+    "notes": {},
+    "caption": "Mittenboxen saknar flera siffror, men R5C5 kan begränsas till 5."
+  },
+  {
+    "id": "BOARD-11-03",
+    "title": "Rad 5 efter R5C5 = 5",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "400853001",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "row",
+        "index": 5,
+        "color": "blue"
+      },
+      {
+        "type": "cell",
+        "row": 5,
+        "col": 5,
+        "color": "green"
+      }
+    ],
+    "notes": {},
+    "caption": "Rad 5 efter att den enkla singeln 5 har placerats."
+  },
+  {
+    "id": "BOARD-12-01",
+    "title": "Träningsrad med kandidater",
+    "grid": [
+      "204608910",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "row",
+        "index": 1,
+        "color": "blue"
+      },
+      {
+        "type": "cell",
+        "row": 1,
+        "col": 2,
+        "color": "gold"
+      },
+      {
+        "type": "cell",
+        "row": 1,
+        "col": 5,
+        "color": "gold"
+      },
+      {
+        "type": "cell",
+        "row": 1,
+        "col": 9,
+        "color": "gold"
+      }
+    ],
+    "notes": {
+      "r1c2": "3,5",
+      "r1c5": "3,5,7",
+      "r1c9": "5,7"
+    },
+    "caption": "De tomma rutorna i raden visas med kandidatlistor."
+  },
+  {
+    "id": "BOARD-02-02",
+    "title": "Eliminering i en box",
+    "grid": [
+      "500000000",
+      "000000000",
+      "000005000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "box",
+        "index": 1,
+        "color": "gold"
+      }
+    ],
+    "notes": {
+      "r1c2": "x",
+      "r1c3": "x",
+      "r3c1": "x",
+      "r3c2": "x",
+      "r3c3": "x"
+    },
+    "caption": "x visar rutor där 5 inte kan stå."
+  },
+  {
+    "id": "BOARD-02-03",
+    "title": "En säker placering i en box",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "box",
+        "index": 1,
+        "color": "gold"
+      },
+      {
+        "type": "cell",
+        "row": 2,
+        "col": 2,
+        "color": "green"
+      }
+    ],
+    "notes": {
+      "r1c1": "x",
+      "r1c2": "x",
+      "r1c3": "x",
+      "r2c1": "x",
+      "r2c2": "7",
+      "r2c3": "x",
+      "r3c1": "x",
+      "r3c2": "x",
+      "r3c3": "x"
+    },
+    "caption": "När bara en plats återstår blir placeringen säker."
+  },
+  {
+    "id": "BOARD-02-04",
+    "title": "Exempel: fyror påverkar boxen",
+    "grid": [
+      "000040000",
+      "000000000",
+      "400000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "box",
+        "index": 1,
+        "color": "gold"
+      }
+    ],
+    "notes": {},
+    "caption": "Fyror i rad 1 och rad 3 begränsar den övre vänstra boxen."
+  },
+  {
+    "id": "BOARD-02-05",
+    "title": "Tre möjliga platser för 4",
+    "grid": [
+      "000040000",
+      "000000000",
+      "400000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "box",
+        "index": 1,
+        "color": "gold"
+      },
+      {
+        "type": "row",
+        "index": 2,
+        "color": "blue"
+      }
+    ],
+    "notes": {
+      "r1c1": "x",
+      "r1c2": "x",
+      "r1c3": "x",
+      "r3c2": "x",
+      "r3c3": "x"
+    },
+    "caption": "Efter radkontroll finns fortfarande tre möjliga platser."
+  },
+  {
+    "id": "BOARD-02-06",
+    "title": "Fyran blir säker",
+    "grid": [
+      "000040000",
+      "000000000",
+      "400000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "box",
+        "index": 1,
+        "color": "gold"
+      },
+      {
+        "type": "cell",
+        "row": 2,
+        "col": 2,
+        "color": "green"
+      }
+    ],
+    "notes": {
+      "r1c1": "x",
+      "r1c2": "x",
+      "r1c3": "x",
+      "r2c1": "x",
+      "r2c2": "4",
+      "r2c3": "x",
+      "r3c2": "x",
+      "r3c3": "x"
+    },
+    "caption": "När kolumnerna också utesluter platser återstår mittenrutan."
+  },
+  {
+    "id": "BOARD-03-01",
+    "title": "Exempelruta för kandidater",
+    "grid": [
+      "509000000",
+      "100000000",
+      "070000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "box",
+        "index": 1,
+        "color": "gold"
+      },
+      {
+        "type": "cell",
+        "row": 2,
+        "col": 2,
+        "color": "green"
+      }
+    ],
+    "notes": {
+      "r2c2": "?"
+    },
+    "caption": "R2C2 är rutan vars kandidater vi undersöker."
+  },
+  {
+    "id": "BOARD-03-02",
+    "title": "Utsnitt för kandidatlista",
+    "grid": [
+      "509040000",
+      "100609000",
+      "073010000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "box",
+        "index": 1,
+        "color": "gold"
+      },
+      {
+        "type": "cell",
+        "row": 2,
+        "col": 2,
+        "color": "green"
+      }
+    ],
+    "notes": {
+      "r2c2": "?"
+    },
+    "caption": "R2C2 jämförs med sin rad, kolumn och box."
+  },
+  {
+    "id": "BOARD-03-03",
+    "title": "Kandidatövning i en box",
+    "grid": [
+      "408000000",
+      "200000000",
+      "060000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "box",
+        "index": 1,
+        "color": "gold"
+      },
+      {
+        "type": "cell",
+        "row": 2,
+        "col": 2,
+        "color": "green"
+      }
+    ],
+    "notes": {
+      "r2c2": "?"
+    },
+    "caption": "Använd givna siffror för att hitta kandidater."
+  },
+  {
+    "id": "BOARD-04-01",
+    "title": "Scanning efter siffran 5",
+    "grid": [
+      "000000000",
+      "070000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "box",
+        "index": 1,
+        "color": "gold"
+      },
+      {
+        "type": "cell",
+        "row": 3,
+        "col": 2,
+        "color": "green"
+      }
+    ],
+    "notes": {
+      "r1c1": "x",
+      "r1c2": "x",
+      "r1c3": "x",
+      "r2c1": "x",
+      "r2c3": "x",
+      "r3c1": "x",
+      "r3c2": "5",
+      "r3c3": "x"
+    },
+    "caption": "Scanning utesluter alla platser utom R3C2."
+  },
+  {
+    "id": "BOARD-04-02",
+    "title": "Övning: scanna efter 5",
+    "grid": [
+      "009000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "box",
+        "index": 1,
+        "color": "gold"
+      }
+    ],
+    "notes": {},
+    "caption": "Bestäm vilka rutor i boxen som fortfarande kan vara möjliga."
+  },
+  {
+    "id": "BOARD-05-01",
+    "title": "Kort lösningsrunda före placering",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "205070109",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "row",
+        "index": 4,
+        "color": "blue"
+      },
+      {
+        "type": "cell",
+        "row": 4,
+        "col": 6,
+        "color": "gold"
+      }
+    ],
+    "notes": {
+      "r4c2": "3,4,8",
+      "r4c4": "4,6",
+      "r4c6": "6",
+      "r4c8": "3,4,8"
+    },
+    "caption": "R4C6 har bara en kandidat."
+  },
+  {
+    "id": "BOARD-05-02",
+    "title": "Kort lösningsrunda efter placering",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "205076109",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "row",
+        "index": 4,
+        "color": "blue"
+      },
+      {
+        "type": "cell",
+        "row": 4,
+        "col": 6,
+        "color": "green"
+      }
+    ],
+    "notes": {},
+    "caption": "Efter placeringen uppdateras raden, kolumnen och boxen."
+  },
+  {
+    "id": "BOARD-06-07",
+    "title": "Övning: låst kandidat 6",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "box",
+        "index": 1,
+        "color": "gold"
+      },
+      {
+        "type": "row",
+        "index": 1,
+        "color": "blue"
+      }
+    ],
+    "notes": {
+      "r1c1": "6?",
+      "r1c3": "6?",
+      "r1c4": "6?",
+      "r1c5": "6?"
+    },
+    "caption": "Öva på att se om 6 är låst till en rad i boxen."
+  },
+  {
+    "id": "BOARD-07-05",
+    "title": "Övning: rad-box-interaktion med 7",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "box",
+        "index": 1,
+        "color": "gold"
+      },
+      {
+        "type": "row",
+        "index": 2,
+        "color": "blue"
+      }
+    ],
+    "notes": {
+      "r1c1": "x",
+      "r1c2": "x",
+      "r1c3": "x",
+      "r2c1": "7",
+      "r2c3": "7",
+      "r3c1": "x",
+      "r3c2": "x",
+      "r3c3": "x"
+    },
+    "caption": "Kandidat 7 ligger bara på rad 2 i boxen."
+  },
+  {
+    "id": "BOARD-07-06",
+    "title": "Övning: kolumn-box-interaktion med 2",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "box",
+        "index": 5,
+        "color": "gold"
+      },
+      {
+        "type": "col",
+        "index": 5,
+        "color": "blue"
+      }
+    ],
+    "notes": {
+      "r4c4": "x",
+      "r4c5": "2",
+      "r4c6": "x",
+      "r5c4": "x",
+      "r5c6": "x",
+      "r6c4": "x",
+      "r6c5": "2",
+      "r6c6": "x"
+    },
+    "caption": "Kandidat 2 ligger bara i kolumn 5 i boxen."
+  },
+  {
+    "id": "BOARD-11-04",
+    "title": "Övning: rad 5",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "400853001",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "row",
+        "index": 5,
+        "color": "blue"
+      }
+    ],
+    "notes": {},
+    "caption": "Vilken information får du av rad 5?"
+  },
+  {
+    "id": "BOARD-02-07",
+    "title": "Övning: säker 6:a",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "box",
+        "index": 1,
+        "color": "gold"
+      },
+      {
+        "type": "cell",
+        "row": 2,
+        "col": 2,
+        "color": "green"
+      }
+    ],
+    "notes": {
+      "r1c1": "x",
+      "r1c2": "x",
+      "r1c3": "x",
+      "r2c1": "x",
+      "r2c2": "6",
+      "r2c3": "x",
+      "r3c1": "x",
+      "r3c2": "x",
+      "r3c3": "x"
+    },
+    "caption": "Avgör om 6 kan placeras säkert."
+  },
+  {
+    "id": "BOARD-02-08",
+    "title": "Övning: möjlig eller säker 3:a",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "box",
+        "index": 1,
+        "color": "gold"
+      }
+    ],
+    "notes": {
+      "r1c1": "x",
+      "r1c2": "3?",
+      "r1c3": "x",
+      "r2c1": "3?",
+      "r2c2": "x",
+      "r2c3": "x",
+      "r3c1": "x",
+      "r3c2": "x",
+      "r3c3": "x"
+    },
+    "caption": "Fler än en plats är möjlig."
+  },
+  {
+    "id": "BOARD-02-09",
+    "title": "Övning: återstående plats för 8",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "box",
+        "index": 1,
+        "color": "gold"
+      },
+      {
+        "type": "cell",
+        "row": 1,
+        "col": 3,
+        "color": "green"
+      }
+    ],
+    "notes": {
+      "r1c1": "x",
+      "r1c2": "x",
+      "r1c3": "8",
+      "r2c1": "x",
+      "r2c2": "x",
+      "r2c3": "x",
+      "r3c1": "x",
+      "r3c2": "x",
+      "r3c3": "x"
+    },
+    "caption": "Hitta den enda återstående platsen."
+  },
+  {
+    "id": "BOARD-10-03",
+    "title": "X-Wing-exempel med kandidat 5 före rensning",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "row",
+        "index": 2,
+        "color": "blue"
+      },
+      {
+        "type": "row",
+        "index": 6,
+        "color": "blue"
+      },
+      {
+        "type": "col",
+        "index": 1,
+        "color": "gold"
+      },
+      {
+        "type": "col",
+        "index": 7,
+        "color": "gold"
+      }
+    ],
+    "notes": {
+      "r2c1": "5",
+      "r2c7": "5",
+      "r6c1": "5",
+      "r6c7": "5",
+      "r8c5": "5",
+      "r8c7": "5",
+      "r8c9": "5",
+      "r9c1": "5",
+      "r9c4": "5"
+    },
+    "caption": "Rad 2 och rad 6 bildar X-Wing i kolumn 1 och 7."
+  },
+  {
+    "id": "BOARD-10-04",
+    "title": "X-Wing-exempel med kandidat 5 efter rensning",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "row",
+        "index": 2,
+        "color": "blue"
+      },
+      {
+        "type": "row",
+        "index": 6,
+        "color": "blue"
+      },
+      {
+        "type": "col",
+        "index": 1,
+        "color": "gold"
+      },
+      {
+        "type": "col",
+        "index": 7,
+        "color": "gold"
+      },
+      {
+        "type": "cell",
+        "row": 8,
+        "col": 7,
+        "color": "red"
+      },
+      {
+        "type": "cell",
+        "row": 9,
+        "col": 1,
+        "color": "red"
+      }
+    ],
+    "notes": {
+      "r2c1": "5",
+      "r2c7": "5",
+      "r6c1": "5",
+      "r6c7": "5",
+      "r8c5": "5",
+      "r8c7": "x",
+      "r8c9": "5",
+      "r9c1": "x",
+      "r9c4": "5"
+    },
+    "caption": "Kandidat 5 rensas från andra rutor i kolumn 1 och 7."
+  },
+  {
+    "id": "BOARD-10-05",
+    "title": "Övning: kandidat 8",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "row",
+        "index": 1,
+        "color": "blue"
+      },
+      {
+        "type": "row",
+        "index": 5,
+        "color": "blue"
+      },
+      {
+        "type": "col",
+        "index": 2,
+        "color": "gold"
+      },
+      {
+        "type": "col",
+        "index": 6,
+        "color": "gold"
+      }
+    ],
+    "notes": {
+      "r1c2": "8",
+      "r1c6": "8",
+      "r3c6": "8",
+      "r3c9": "8",
+      "r5c2": "8",
+      "r5c6": "8",
+      "r7c6": "8",
+      "r7c9": "8"
+    },
+    "caption": "Vilka två rader bildar X-Wing i kolumn 2 och 6?"
+  },
+  {
+    "id": "BOARD-10-06",
+    "title": "Övning: kandidat 6",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "col",
+        "index": 1,
+        "color": "gold"
+      },
+      {
+        "type": "col",
+        "index": 5,
+        "color": "gold"
+      },
+      {
+        "type": "col",
+        "index": 8,
+        "color": "gold"
+      }
+    ],
+    "notes": {
+      "r2c1": "6",
+      "r2c5": "6",
+      "r4c1": "6",
+      "r4c8": "6",
+      "r7c1": "6",
+      "r7c5": "6"
+    },
+    "caption": "Avgör om mönstret är ett tydligt X-Wing."
+  },
+  {
+    "id": "BOARD-10-07",
+    "title": "Övning: Swordfish med kandidat 2",
+    "grid": [
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000",
+      "000000000"
+    ],
+    "highlights": [
+      {
+        "type": "row",
+        "index": 1,
+        "color": "blue"
+      },
+      {
+        "type": "row",
+        "index": 5,
+        "color": "blue"
+      },
+      {
+        "type": "row",
+        "index": 9,
+        "color": "blue"
+      },
+      {
+        "type": "col",
+        "index": 1,
+        "color": "gold"
+      },
+      {
+        "type": "col",
+        "index": 4,
+        "color": "gold"
+      },
+      {
+        "type": "col",
+        "index": 7,
+        "color": "gold"
+      }
+    ],
+    "notes": {
+      "r1c1": "2",
+      "r1c4": "2",
+      "r5c4": "2",
+      "r5c7": "2",
+      "r9c1": "2",
+      "r9c7": "2"
+    },
+    "caption": "Tre rader och tre kolumner skapar ett Swordfish-liknande mönster."
+  }
+]
